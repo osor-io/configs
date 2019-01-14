@@ -61,6 +61,8 @@ init_language_cpp(Application_Links *app){
 		PSAT("u32" , CPP_TOKEN_KEY_TYPE),
 		PSAT("u16" , CPP_TOKEN_KEY_TYPE),
 		PSAT("u8" , CPP_TOKEN_KEY_TYPE),
+		PSAT("f32" , CPP_TOKEN_KEY_TYPE),
+		PSAT("f64" , CPP_TOKEN_KEY_TYPE),
 		
         
         PSAT("long"     , CPP_TOKEN_KEY_MODIFIER),

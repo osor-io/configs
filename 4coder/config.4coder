@@ -46,7 +46,7 @@ default_theme_name = "monokai";
 highlight_line_at_cursor = true;
 
 // Font
-default_font_name = "Liberation Mono";
+default_font_name = "Fira Code Medium";
 default_font_size = 16;
 default_font_hinting = false;
 
