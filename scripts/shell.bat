@@ -11,4 +11,4 @@ IF EXIST "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxi
 )
 
 rem Adding our things to the path
-set path=W:\kongfig\scripts;W:\apps\4coder;%path%
+set path=C:\kongfig\scripts;C:\programs\4coder;%path%

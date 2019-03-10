@@ -102,6 +102,11 @@ init_language_cpp(Application_Links *app){
         PSAT("union"    , CPP_TOKEN_KEY_TYPE_DECLARATION),
         PSAT("template" , CPP_TOKEN_KEY_TYPE_DECLARATION),
         PSAT("typename" , CPP_TOKEN_KEY_TYPE_DECLARATION),
+        PSAT("procedure" , CPP_TOKEN_KEY_TYPE_DECLARATION),
+        PSAT("global_variable" , CPP_TOKEN_KEY_TYPE_DECLARATION),
+        PSAT("local_persist" , CPP_TOKEN_KEY_TYPE_DECLARATION),
+        PSAT("function" , CPP_TOKEN_KEY_TYPE_DECLARATION),
+        PSAT("let" , CPP_TOKEN_KEY_TYPE_DECLARATION),
         
         PSAT("friend"    , CPP_TOKEN_KEY_ACCESS),
         PSAT("namespace" , CPP_TOKEN_KEY_ACCESS),

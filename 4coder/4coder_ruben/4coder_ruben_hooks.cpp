@@ -4,7 +4,7 @@
 
 // TOP
 
-#include "languages/4coder_language_cpp.h"
+#include "ruben_languages/ruben_language_cpp.h"
 #include "languages/4coder_language_rust.h"
 #include "languages/4coder_language_cs.h"
 #include "languages/4coder_language_java.h"
@@ -807,6 +807,13 @@ OPEN_FILE_HOOK_SIG(default_file_settings){
     buffer_set_setting(app, &buffer, BufferSetting_VirtualWhitespace, use_virtual_whitespace);
     buffer_set_setting(app, &buffer, BufferSetting_Lex, use_lexer);
     
+    
+    // NOTE(ruben): Checking if the file is readonly, in which case we set the buffer as readonly too
+    {
+        bool is_read_only = is_file_readonly(buffer.file_name);
+        buffer_set_setting(app, &buffer, BufferSetting_ReadOnly, is_read_only);
+    }
+    
     // no meaning for return
     return(0);
 }
@@ -951,6 +958,7 @@ SCROLL_RULE_SIG(smooth_scroll_rule){
     }
     return(result);
 }
+
 
 static void
 set_all_default_hooks(Bind_Helper *context){
